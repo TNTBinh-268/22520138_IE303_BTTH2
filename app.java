@@ -66,7 +66,7 @@ class Pipe {
     private static final int WIDTH = 60;
     private static final int HEIGHT = 400;
     private static final int GAP = 150;
-    private static double speed = 3;
+    private double speed = 3;
     private static BufferedImage topPipeSprite, bottomPipeSprite;
 
     public static void loadSprites() {
@@ -91,7 +91,6 @@ class Pipe {
 
     public void updatePosition() {
         posX -= speed;
-        speed += 0.001;
     }
 
     public boolean isOffScreen() {
